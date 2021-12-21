@@ -32,7 +32,7 @@ def selection_component
   mod = Sketchup.active_model
   sel = mod.selection
   if sel.count > 0
-    compos = sel.grep(Sketchup::ComponentInstace)
+    compos = sel.grep(Sketchup::ComponentInstance)
     sel.clear
     sel.add(compos)
   end
